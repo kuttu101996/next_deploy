@@ -1,0 +1,34 @@
+**) What is Layout.js file?
+    ==> Is the parent of all pages main page.js ka bhi parent hai.
+        It contains title & description of the page.
+        Every folder (means route can have their own layout.js page)
+
+
+**) To hide all warnings.
+    ==> <body suppressHydrationWarning>{children}</body>
+
+
+**) How to create context API?
+    ==> Create a file for context api
+        Invoke the inbuild function (createContext) inside a variable & export that variable.
+        return that variable using .Provider and the data we want to pass using value
+        e.g. return <MyContext.Provider value={loggedUser}>{children}</MyContext.Provider>
+        to make the data available import MyContext (variable) inside layout.js like this
+        import MyContext from "@/Helper/Context"; and wrap the children inside 
+        like this <MyContext>{children}</MyContext>
+
+        to get the data we have a hook name (useContext(MyContext)) 
+        this will take the parameter MyContext
+        store this inside a variable and u r good to go.
+
+
+1) Two way binding.
+    ==> Getting an Input value and Setting it live is two way binding
+
+
+2) Routing, Dynamic routing.
+    ==> 
+
+
+3) Server side rendering & client side rendering.
+    ==> Next.js offers bydefault server side rendering.
